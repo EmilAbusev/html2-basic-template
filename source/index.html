@@ -10,26 +10,30 @@
 
 
     <div class="page-container">
-    <header class="header">
+    <header class="header" data-test="header">
       <nav class="navigation navigation--open navigation--close">
         <a class="navigation-logo" href="index.html">
-          <img class="navigation-logo__image" src="" width="" height="" width="" height="" alt="Логотип Drink2go">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="./images/navigation/logo-desktop.svg">
+            <source media="(min-width: 786px)" srcset="./images/navigation/logo-tablet.svg">
+            <img class="navigation-logo__image" src="./images/navigation/logo-mobile.svg" width="32" height="36" alt="Логотип Drink2go">
+          </picture>
         </a>
         <p class="navigation-text">Интернет-магазин кофейных напитков</p>
         <ul class="navigation__list">
           <li class="navigation-item">
             <a class="navigation-item__link" href="">
-              <img class="navigation-item__image" src="" width="" height="" alt="Войти в свой профиль">
+              <img class="navigation-item__image" src="./images/navigation/user.svg" width="16" height="16" alt="Войти в свой профиль">
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-item__link" href="">
-              <img class="navigation-item__image" src="" width="" height="" alt="Просмотр корзины">
+              <img class="navigation-item__image" src="./images/navigation/basket.svg" width="16" height="16" alt="Просмотр корзины">
             </a>
           </li>
           <li class="navigation__item">
             <button class="navigation-toggel" href="">
-              <img class="navigation-toggel__image" src="" width="" height="" alt="Просмотр меню">
+              <img class="navigation-toggel__image" src="./images/navigation/menu.svg" width="16" height="12" alt="Просмотр меню">
             </button>
           </li>
         </ul>
@@ -51,14 +55,16 @@
         </div>
       </nav>
     </header>
+
+
     <main class="main">
-      <section class="main-container">
+      <section class="hero-container" data-test="hero">
        <h1 class="visually-hidden">Уникальное предложение</h1>
        <picture>
-        <img class="main-container__image" src="" width="" height="" alt="Продукт со скидкой">
+        <img class="hero-container__image" src="" width="" height="" alt="Продукт со скидкой">
        </picture>
-       <p class="main-container__text">Новинка!</p>
-       <h2 class="main-titel">Декаф Флэт Уайт</h2>
+       <p class="hero-container__text">Новинка!</p>
+       <h2 class="hero-titel">Декаф Флэт Уайт</h2>
        <div class="special-price">
        <p class="special-price__text">Свежесваренный кофе без кофеина из Эфиопии с натуральным
          фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
@@ -67,30 +73,27 @@
          <button class="special-price__button">Заказать</button>
        </div>
       </section>
-      <section class="advantage">
+
+      <section class="advantage" data-test="features">
         <h2 class="advantage__titel">Главные причины выбрать Drink2Go</h2>
         <p class="advantage__text">Преимущества</p>
         <div class="advantage-container">
           <ul class="advantage-container__lits">
             <li class="advantage-container__item">
-              <svg class="advantage-container-image"></svg>
               <h3 class="advantage-container__titel">Скорость</h3>
               <p class="advantage-container__text">Готовый напиток всегда под рукой — просто открой банку</p>
             </li>
             <li class="advantage-container__item">
-              <svg class="advantage-container-image"></svg>
               <h3 class="advantage-container__titel">Удобство</h3>
               <p class="advantage-container__text">Легко помещается и в карман,
                 и в маленькую сумочку</p>
             </li>
             <li class="advantage-container__item">
-              <svg class="advantage-container-image"></svg>
               <h3 class="advantage-container__titel">Бодрость</h3>
               <p class="advantage-container__text">Сбалансированная доза кофеина даст мощный
                  заряд энергии</p>
             </li>
             <li class="advantage-container__item">
-              <svg class="advantage-container-image"></svg>
               <h3 class="advantage-container__titel">Экологичность</h3>
               <p class="advantage-container__text">Вся упаковка сделана
                 из перерабатываемых материалов</p>
@@ -99,10 +102,10 @@
         </div>
       </section>
 
-      <section class="catalog">
+      <section class="catalog" data-test="catalog">
         <h2 class="catalog__titel">Каталог кофейных напитков</h2>
         <p class="catalog__text">Каталог</p>
-        <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
+        <form class="filter" action="https://echo.htmlacademy.ru" method="get">
 
           <div class="filter-block">
             <b class="filter-price__titel">Цена</b>
@@ -200,7 +203,7 @@
            <div class="filter-product">
             <ul class="filter-product__list">
               <li class="filter-product__item">
-                <img class="filter-product__image" src="" width="" height="" alt="">
+                <img class="filter-product__image" src="./images/catalog/coffee-product1.png" width="130" height="188" alt="Продукт Декаф Флэт Уайт">
                 <b class="filter-product__titel">Декаф Флэт Уайт</b>
                 <p class="filter-product__text">Кофе без кофеина из Эфиопии
                   с натуральным фермерским молоком</p>
@@ -208,7 +211,7 @@
                 <a class="filter-product__button" href="#">В корзину</a>
               </li>
               <li class="filter-product__item">
-                <img class="filter-product__image" src="" width="" height="" alt="">
+                <img class="filter-product__image" src="./images/catalog/coffee-product2.png" width="130" height="188" alt="Продукт Декаф Флэт Уайт">
                 <b class="filter-product__titel">Декаф Флэт Уайт</b>
                 <p class="filter-product__text">Кофе без кофеина из Эфиопии
                   с натуральным фермерским молоком</p>
@@ -216,7 +219,7 @@
                 <a class="filter-product__button" href="#"></a>
               </li>
               <li class="filter-product__item">
-                <img class="filter-product__image" src="" width="" height="" alt="">
+                <img class="filter-product__image" src="./images/catalog/coffee-product3.png" width="130" height="188" alt="Продукт Декаф Флэт Уайт">
                 <b class="filter-product__titel">Декаф Флэт Уайт</b>
                 <p class="filter-product__text">Кофе без кофеина из Эфиопии
                   с натуральным фермерским молоком</p>
@@ -224,7 +227,7 @@
                 <a class="filter-product__button" href="#">В корзину</a>
               </li>
               <li class="filter-product__item">
-                <img class="filter-product__image" src="" width="" height="" alt="">
+                <img class="filter-product__image" src="./images/catalog/coffee-product4.png" width="130" height="188" alt="Продукт Декаф Флэт Уайт">
                 <b class="filter-product__titel">Декаф Флэт Уайт</b>
                 <p class="filter-product__text">Кофе без кофеина из Эфиопии
                   с натуральным фермерским молоком</p>
@@ -232,7 +235,7 @@
                 <a class="filter-product__button" href="#">В корзину</a>
               </li>
               <li class="filter-product__item">
-                <img class="filter-product__image" src="" width="" height="" alt="">
+                <img class="filter-product__image" src="./images/catalog/coffee-product5.png" width="130" height="188" alt="Продукт Декаф Флэт Уайт">
                 <b class="filter-product__titel">Декаф Флэт Уайт</b>
                 <p class="filter-product__text">Кофе без кофеина из Эфиопии
                   с натуральным фермерским молоком</p>
@@ -240,7 +243,7 @@
                 <a class="filter-product__button" href="#">В корзину</a>
               </li>
               <li class="filter-product__item">
-                <img class="filter-product__image" src="" width="" height="" alt="">
+                <img class="filter-product__image" src="./images/catalog/coffee-product6.png" width="130" height="188" alt="Продукт Декаф Флэт Уайт">
                 <b class="filter-product__titel">Декаф Флэт Уайт</b>
                 <p class="filter-product__text">Кофе без кофеина из Эфиопии
                   с натуральным фермерским молоком</p>
@@ -249,13 +252,53 @@
               </li>
             </ul>
            </div>
+
+           <div class="filter-pagination">
+            <ol class="filter-pagination__list">
+              <li class="filter-pagination__item">
+                <button class="filter-pagination__button">
+                  <picture>
+                    <source>
+                  </picture>
+                  <p class="filter-pagination__text">Назад</p>
+                </button>
+              </li>
+              <li class="filter-pagination__item">
+                <button class="filter-pagination__button current--first">
+                  <p class="filter-pagination__text">1</p>
+                </button>
+              </li>
+              <li class="filter-pagination__item">
+                <button class="filter-pagination__button button--current">
+                  <p class="filter-pagination__text">2</p>
+                </button>
+              </li>
+              <li class="filter-pagination__item">
+                <button class="filter-pagination__button">
+                  <p class="filter-pagination__text">3</p>
+                </button>
+              </li>
+              <li class="filter-pagination__item">
+                <button class="filter-pagination__button current--lust">
+                  <picture>
+                    <source>
+                  </picture>
+                  <p class="filter-pagination__text">Вперёд</p>
+                </button>
+              </li>
+            </ol>
+           </div>
           </div>
         </form>
       </section>
 
-      <section class="geolocation-map">
+      <section class="geolocation-map" data-test="map">
         <h2 class="visually-hidden">Геолокация</h2>
-        <img class="geolocation-map__image" src="" width="" height="" alt="">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./images/map/map-desktop.png">
+          <source media="(min-width: 786px)" srcset="./images/map/map-tablet.png">
+          <img class="geolocation-map__image" src="./images/map/map-mobile.png" width="320" height="420" alt="Расположение на карте">
+        </picture>
       </section>
     </main>
 
@@ -264,23 +307,26 @@
       <div class="social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <a class="footer-logo" href="">
-         <svg class="footer-logo__image"></svg>
+          <picture>
+            <source media="(min-width: 786px)" srcset="./images/navigation/logo-desktop.svg">
+            <img class="footer-logo__image" src="./images/navigation/logo-tablet.svg" width="82" height="36" alt="Логотип Drink2go">
+           </picture>
         </a>
         <p class="footer-logo__text">Интернет-магазин кофейных напитков</p>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link">
-              <svg class="social__image"></svg>
+              <svg class="social__image" xmlns="./images/footer/vk.svg" width="20" height="20"></svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link">
-              <svg class="social__image"></svg>
+              <svg class="social__image" xmlns="./images/footer/vk.svg" width="22" height="22"></svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link">
-              <svg class="social__image"></svg>
+              <svg class="social__image" xmlns="./images/footer/vk.svg" width="20" height="20"></svg>
             </a>
           </li>
         </ul>
@@ -323,18 +369,25 @@
           <h2 class="footer-contacts-titel">Контакты</h2>
           <ul class="footer-contacts__list">
             <li class="footer-contacts__item">
-              <a class="footer-contacts__link" href="">Санкт-Петербург, набережная реки Карповки, дом 5</a>
+              <a class="footer-contacts__link" href="">
+                <svg class="footer-contacts__image" xmlns="./image/footer/addres.svg" width="13" height="16"></svg>
+                <p class="footer-contacts-text">Санкт-Петербург, набережная реки Карповки, дом 5</p>
+              </a>
             </li>
             <li class="footer-contacts__item">
-              <a class="footer-contacts__link" href="tel:+7 (999) 999-99-99">+7 (999) 999-99-99</a>
+              <a class="footer-contacts__link" href="tel:+7 (999) 999-99-99">
+                <svg class="footer-contacts__image" xmlns="./image/footer/phone.svg" width="13" height="16"></svg>
+                <p class="footer-contacts__number">+7 (999) 999-99-99</p>
+              </a>
             </li>
           </ul>
         </div>
 
         <div class="footer-developed">
           <h2 class="footer-developed__titel">Разработано в</h2>
-            <a class="footer-developed__link" href="https://htmlacademy.ru">HTML Academy
-              <svg class="footer-developed__image"></svg>
+            <a class="footer-developed__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <svg class="footer-developed__image" xmlns="./image/footer/html-logo.svg" width="13" height="16"></svg>
+              <p class="footer-developed__text">HTML Academy</p>
             </a>
         </div>
 
